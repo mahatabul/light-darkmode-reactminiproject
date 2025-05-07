@@ -1,0 +1,57 @@
+/* default light theme */
+:root {
+    --background: black;
+    --text-primary: white;
+    --button-bg: white;
+    --button-text: black;
+  
+  
+}
+
+[data-theme="dark"] {
+  
+  --background: white;
+  --text-primary: black;
+  --button-bg: black;
+  --button-text: white;
+}
+
+.light-darkmode .container {
+  background-color: var(--background);
+  color: var(--text-primary);
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+    align-items: center; */
+  margin: auto;
+  padding: auto;
+  height: 100vh;
+  transition: all .4s ease-in;
+}
+
+.container h2 {
+  text-align: center;
+  margin-top: auto;
+}
+
+.container button {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  padding: 10px 8px;
+  border-radius: 10px;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 6px;
+
+  max-width: 300px;
+
+  border: none;
+  cursor: pointer;
+
+  transition: all .4s ease;
+}
+
+/* .container button:hover {
+  background-color: rgb(39, 243, 20);
+} */
